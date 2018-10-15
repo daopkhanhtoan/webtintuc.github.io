@@ -1,11 +1,11 @@
 <?php  
 
 // lơp database 
-class{
-	private $hostname = 'localhost',
+class DB{
+	private $hostname = '127.0.0.1',
             $username = 'root',
             $password = '',
-            $dbname = 'newspage';
+            $dbname = 'newspape';
 
 // biến lưu trử kết nối	
     public $cn = null;
@@ -84,7 +84,7 @@ class{
  				if($type == 1)
  				{
  					//lấy một hàng dữ liệu gán vào biến
- 					$data = mysqli_fetch_assoc($query)
+ 					$data = mysqli_fetch_assoc($query);
  					return $data;
  				}
  			}
